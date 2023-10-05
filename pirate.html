@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Treasure by Your Name</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0e68c; /* Light Goldenrod Yellow */
+        }
+
+        header {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #instructions, #locations, #penalty, #help, #help-report {
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 2px solid #8b4513; /* SaddleBrown */
+            background-color: #ffd700; /* Gold */
+            border-radius: 8px;
+        }
+
+        #locations, #penalty {
+            font-weight: bold;
+        }
+
+        #help-report {
+            color: #8b0000; /* DarkRed */
+        }
+
+        #help:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Find the Treasure by Your Name
+    </header>
+
+    <div id="instructions">
+        <p>Click on the locations to search for treasure, beware the traps</p>
+    </div>
+
+    <div id="locations">
+        <p>Number of locations checked is zero.</p>
+    </div>
+
+    <div id="penalty">
+        <p>Penalty is zero.</p>
+    </div>
+
+    <div id="help">
+        <p>Click for help.</p>
+    </div>
+
+    <div id="help-report">
+        <p>Help report</p>
+    </div>
+</body>
+</html>
+
