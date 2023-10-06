@@ -1,74 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find the Treasure by Vinay Marella</title>
-    <style>
- 
-        .game-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
 
-        .row {
-            display: flex;
-        }
+    <title>
+        Pirate
+      </title>
+  </head>
+  <body>
 
-        .location {
-            width: 80px; /* Adjust based on your image size */
-            height: 80px; /* Adjust based on your image size */
-            margin: 5px;
-            border: 2px solid #8b4513; /* SaddleBrown */
-            border-radius: 8px;
-            overflow: hidden;
-        }
+    <h1 style="background-color: rgb(226, 226, 27);font-size: 25px;">Find the treasure by Vinay MArella</h1><br>
+   
+    <div style=" background-color:rgb(255, 236, 224); font-family: sans-serif; font-size: 15px;">
+        Click on the locations to search for treasure, beware the traps.
+    </div><br>
+    <div id="locations" style=" background-color:rgb(32, 107, 72); font-family: sans-serif; font-size: 15px;">
+        Number of locations checked is zero
+    </div><br>
+    <div id="penalty" style=" background-color:rgb(164, 12, 156); font-family: sans-serif; font-size: 15px;">
+        Penalty is zero.
+    </div><br>
+    <div style=" background-color:rgb(70, 224, 224); font-family: sans-serif; font-size: 15px;">
+        Click for Help.
+    </div><br>
+    <div id="help" style=" background-color:rgb(255, 224, 244); font-family:sans-serif; font-size: 15px;">
+        Help Report
+    </div><br>
 
-        .location img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        Find the Treasure by Vinay Marella
-    </header>
-
-    <div id="instructions">
-        <p>Click on the locations to search for treasure, beware the traps</p>
-    </div>
-
-    <div id="locations">
-        <p>Number of locations checked is zero.</p>
-    </div>
-
-    <div id="penalty">
-        <p>Penalty is zero.</p>
-    </div>
-
-    <div id="help">
-        <p>Click for help.</p>
-    </div>
-
-    <div id="help-report">
-        <p>Help report</p>
-    </div>
-
-    <div class="game-container">
+    <div class="container">
         <div class="row">
-            <div class="location"><img src="starting_location.jpg" alt="Starting Location"></div>
-            <div class="location"><img src="Treasure.jpg" alt="Treasure"></div>
-            <div class="location"><img src="trap.jpg" alt="Trap"></div>
-            <div class="location"><img src="pirate_related.jpg" alt="Pirate Related"></div>
-            <div class="location"><img src="placeholder.jpg" alt="Placeholder"></div>
-        </div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+        </div><br>
         <div class="row">
-        </div>
-
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-2"><img src="Treasure.jpg" width=120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="10px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+            <div class="col-md-2"><img src="Treasure.jpg" width="120px" height="110px"></div>
+        </div><br>
     </div>
-
+        
+        
 </body>
+  
 </html>
