@@ -5,50 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find the Treasure by Vinay Marella</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
+ 
+        .game-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f0e68c; /* Light Goldenrod Yellow */
         }
 
-        header {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
+        .row {
+            display: flex;
         }
 
-        #instructions, #locations, #penalty, #help, #help-report {
-            text-align: center;
-            margin-bottom: 15px;
-            padding: 10px;
+        .location {
+            width: 80px; /* Adjust based on your image size */
+            height: 80px; /* Adjust based on your image size */
+            margin: 5px;
             border: 2px solid #8b4513; /* SaddleBrown */
-            background-color: #ffd700; /* Gold */
             border-radius: 8px;
+            overflow: hidden;
         }
 
-        #locations, #penalty {
-            font-weight: bold;
-        }
-
-        #help-report {
-            color: #8b0000; /* DarkRed */
-        }
-
-        #help:hover {
-            cursor: pointer;
-            text-decoration: underline;
+        .location img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <header>
-        Find the Treasure by Your Name
+        Find the Treasure by Vinay Marella
     </header>
 
     <div id="instructions">
@@ -70,6 +56,19 @@
     <div id="help-report">
         <p>Help report</p>
     </div>
+
+    <div class="game-container">
+        <div class="row">
+            <div class="location"><img src="starting_location.jpg" alt="Starting Location"></div>
+            <div class="location"><img src="Treasure.jpg" alt="Treasure"></div>
+            <div class="location"><img src="trap.jpg" alt="Trap"></div>
+            <div class="location"><img src="pirate_related.jpg" alt="Pirate Related"></div>
+            <div class="location"><img src="placeholder.jpg" alt="Placeholder"></div>
+        </div>
+        <div class="row">
+        </div>
+
+    </div>
+
 </body>
 </html>
-
