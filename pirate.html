@@ -75,7 +75,9 @@
             <div class="col-sm-2"><img src="location.jpg" id="24"  width="100px" height="100px" onclick="check(24)"></div>
 
         </div>
-
+        <div class="mt-3">
+            <button class="btn btn-primary" onclick="newGame()">New Game</button>
+        </div>
        
 
     </div>
@@ -107,15 +109,9 @@
        
     
         function check(position)
-    
         {
-    
-            if(gameOver)
-    
-            {
-    
+            if(gameOver) {
                 return;
-    
             }
     
             let id=ids[position];
@@ -125,7 +121,7 @@
             if(position==treasureLocation)
     
             {
-    
+
                 img.src='treasure.png';
     
             }
