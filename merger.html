@@ -42,6 +42,9 @@
   <input type="text" id="newItem" placeholder="Enter item text">
   <button onclick="addEnd()">Add end</button>
 
+  <p>Press the button to add an element at the beginning of the container.</p>
+  <input type="text" id="newItemStart" placeholder="Enter item text">
+  <button onclick="addStart()">Add start</button>
 
   <p>Press the button to remove the last element from the container.</p>
   <button onclick="removeEnd()">Remove end</button>
@@ -49,9 +52,6 @@
   <p>Press the button to add an element at the front of the container.</p>
   <input type="text" id="newItemFront" placeholder="Enter item text">
   <button onclick="addFront()">Add front</button>
-  
-  <p>Press the button to swap two random elements in the container.</p>
-	<button onclick="swap()">Swap</button>
 
  
 </body>
@@ -67,6 +67,16 @@
     }
   }
 
+  function addStart() {
+    const inputText = document.getElementById('newItemStart').value;
+    if (inputText.trim() !== '') {
+      const newElement = document.createElement('div');
+      newElement.innerHTML = inputText;
+      newElement.className = 'merger';
+      const container = document.getElementById('target');
+      container.insertBefore(newElement, container.firstChild);
+    }
+  }
 
   function removeEnd() {
     const container = document.getElementById('target');
